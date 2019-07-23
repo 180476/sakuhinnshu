@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>作品集1</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
+</head>
+
+<body>
+<h1>作品</h1>
+<p>私の作品</p>
+<div id="Tabs1">
+  <ul>
+    <li><a href="#tabs-1">2D</a></li>
+    <li><a href="#tabs-2">3D</a></li>
+    <li><a href="#tabs-3">デッサン</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>UIデザイン</p>
+  </div>
+  <div id="tabs-2">
+    <p>コンテンツ 2</p>
+  </div>
+  <div id="tabs-3">
+    <p>コンテンツ 3</p>
+  </div>
+</div>
+<p>これは、レイアウト P タグのコンテンツです</p>
+<div id="Accordion1">
+	  <h3><a href="#">戦国</a></h3>
+	  <div>
+	    <p>コンテンツ 1</p>
+  </div>
+	  <h3><a href="#">スポーツ</a></h3>
+	  <div>
+	    <p>コンテンツ 2</p>
+  </div>
+	  <h3><a href="#">農業</a></h3>
+	  <div>
+	    <p>コンテンツ 3</p>
+  </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+$(function() {
+	$( "#Accordion1" ).accordion(); 
+});
+</script>
+</body>
+</html>
